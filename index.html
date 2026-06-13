@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Sai Alamuru - Software Engineer & QA Specialist. Portfolio showcasing expertise in React, Node.js, Java, Selenium, and full-stack development.">
+    <meta name="keywords" content="Sri Sai Alamuru, Software Engineer, QA Engineer, Portfolio, React, Node.js, Java, Selenium">
+    <meta name="author" content="Sri Sai Alamuru">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Syncopate:wght@700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <!-- Top Navigation Bar -->
+    <nav class="topnav" id="navbar">
+        <!-- Logo -->
+        <a href="#hero" class="topnav-logo" aria-label="Home">
+            <span class="topnav-logo-text">My Profile</span>
+        </a>
+
+        <!-- Nav Links (desktop) -->
+        <ul class="topnav-links" id="nav-links">
+            <li>
+                <a href="#hero" class="nav-link active" data-section="hero">
+                    <i class="fas fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="far fa-user"></i><span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-chart-bar"></i><span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i><span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i><span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Hamburger for mobile -->
+        <button class="topnav-hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-space-glows">
+            <div class="glow-orb-1"></div>
+            <div class="glow-orb-2"></div>
+        </div>
+
+        <!-- Hero Profile Image -->
+        <div class="hero-image-container">
+            <div class="hero-image-wrapper">
+                <img src="profile.jpg" alt="Sri Sai Alamuru" class="hero-profile-image">
+            </div>
+        </div>
+
+        <!-- Center Front Content Overlay (matching SWELL text overlay) -->
+        <div class="hero-overlay-content">
+            <div class="hero-luxury-title">Sri Sai Alamuru</div>
+            <h1 class="hero-luxury-title">Quality Assurance & Test Automation<span class="title-dot">.</span></h1>
+            <a href="#projects" class="hero-arrow-btn" aria-label="View Projects">
+                <svg viewBox="0 0 24 24" class="arrow-svg">
+                    <path d="M5 19L19 5M19 5H9M19 5V15" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Hero Bottom Branding elements -->
+        <div class="hero-bottom-left-socials">
+            <a href="https://www.linkedin.com/in/srisaialamuru" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/srisaialamuru" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:srisaialamuru@gmail.com" class="social-circle-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="hero-bottom-right-copyright">
+            <div class="copyright-capsule">
+                <span>© 2026</span>
+            </div>
+            <div class="animated-bars-icon">
+                <span class="bar-pill bp-1"></span>
+                <span class="bar-pill bp-2"></span>
+                <span class="bar-pill bp-3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                            <p>
+                                I'm a <strong>Software Test Engineer & QA Specialist</strong> based in <strong>Hyderabad, India</strong>, 
+                                with a strong passion for ensuring software quality through 
+                                comprehensive <strong>manual and automation testing</strong> methodologies.
+                            </p>
+                            <p>
+                                My expertise lies in designing robust <strong>automation testing</strong> frameworks using Selenium WebDriver, TestNG, and 
+                                Java, combined with extensive hands-on experience in <strong>manual testing</strong>, API testing with Postman, and defect tracking in Jira.
+                            </p>
+                            <p>
+                                I believe in establishing meticulous test plans, executing rigorous test cases, and following Agile methodologies to deliver 
+                                high-quality, bug-free software products. I am dedicated to bridging the gap between requirements and flawless execution.
+                            </p>
+                    </div>
+                </div>
+                <div class="about-interests">
+                    <h3 class="interests-title">Interests & Hobbies</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <div class="interest-icon"><i class="fas fa-code-branch"></i></div>
+                            <span>Open Source</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon"><i class="fas fa-brain"></i></div>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon"><i class="fas fa-tv"></i></div>
+                            <span>Anime</span>
+                        </div>
+                        <div class="interest-item">
+                            <div class="interest-icon"><i class="fas fa-plane"></i></div>
+                            <span>Travel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tech <span class="highlight">Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with for Quality Assurance & Automation</p>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Test Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-spider"></i> Selenium WebDriver</span>
+                        <span class="skill-tag"><i class="fas fa-check-double"></i> TestNG</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> Maven</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & CI/CD</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+                        <span class="skill-tag"><i class="fas fa-tasks"></i> Jira</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Methodologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-sync-alt"></i> Agile / Scrum</span>
+                        <span class="skill-tag"><i class="fas fa-clipboard-check"></i> STLC</span>
+                        <span class="skill-tag"><i class="fas fa-bug"></i> Defect Life Cycle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+                <p class="section-subtitle">My professional journey so far</p>
+            </div>
+            <div class="experience-list">
+                <!-- Software Test Engineer -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3 class="timeline-title">Software Test Engineer</h3>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> Fiberify
+                            <span class="timeline-domain">Telecom Domain</span>
+                        </h4>
+                        <ul class="timeline-details">
+                            <li>Developed and maintained automation test scripts using Java, Selenium WebDriver, TestNG, and Maven.</li>
+                            <li>Executed Functional, Regression, Smoke, and Sanity Testing for Telecom web applications.</li>
+                            <li>Created detailed test cases, test scenarios, and test execution reports based on business requirements.</li>
+                            <li>Tested newly developed modules and enhancements before production deployment.</li>
+                            <li>Performed impact analysis and regression testing to ensure existing functionalities were not affected by new releases.</li>
+                            <li>Conducted API Testing using Postman for multiple business modules; verified API request/response data, status codes, and integration workflows.</li>
+                            <li>Performed database validation using SQL queries to verify backend data accuracy and consistency.</li>
+                            <li>Logged, tracked, and managed defects using Jira throughout the defect lifecycle.</li>
+                            <li>Collaborated with developers, business analysts, and product teams to resolve issues efficiently.</li>
+                            <li>Participated in Agile ceremonies including sprint planning, daily stand-ups, sprint reviews, and retrospectives.</li>
+                            <li>Managed source code repositories using Git and GitHub; supported release validation and production deployment activities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-divider"></div>
+
+                <!-- Internships -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <h3 class="timeline-title">Internships</h3>
+                        
+                        <div class="internship-role">
+                            <h4 class="timeline-company">
+                                <i class="fab fa-react"></i> React JS
+                            </h4>
+                            <ul class="timeline-details">
+                                <li>Utilized CSS-in-JS to style components and create a consistent UI look and feel.</li>
+                                <li>Created reusable components to reduce code duplications and ease future maintenance.</li>
+                                <li>Implemented a responsive design that allowed the application to be used across multiple devices with minimal modifications.</li>
+                            </ul>
+                        </div>
+
+                        <div class="internship-role" style="margin-top: 28px;">
+                            <h4 class="timeline-company">
+                                <i class="fas fa-code"></i> Web Development
+                            </h4>
+                            <ul class="timeline-details">
+                                <li>Developed and maintained web applications using HTML5, CSS3, MySQL database.</li>
+                                <li>Analysed requirements to determine the best approach for developing new features or improving existing functionality.</li>
+                                <li>Participated in testing of developed code before deployment to production environments and provided feedback on any bugs found during testing.</li>
+                                <li>Documented all processes used within the development environment including coding standards and version control procedures.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">A showcase of my recent work</p>
+            </div>
+            <div class="projects-list" style="display: flex; flex-direction: column; gap: 32px; max-width: 900px; margin: 0 auto;">
+                
+                <!-- Project 1 -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <div class="timeline-badge" style="background: rgba(0, 180, 216, 0.1); border-color: rgba(0, 180, 216, 0.3); color: var(--accent-primary);">Telecom QA</div>
+                        <h3 class="timeline-title">Telecom Operations Monitoring Portal</h3>
+                        <h4 class="timeline-company" style="margin-top: 6px; margin-bottom: 16px;">
+                            <span class="timeline-domain">Domain: Telecom</span>
+                        </h4>
+                        <ul class="timeline-details">
+                            <li>Automated critical business workflows using Selenium WebDriver and Java.</li>
+                            <li>Designed and executed test cases for telecom operations modules.</li>
+                            <li>Performed API Testing using Postman to validate service integrations.</li>
+                            <li>Conducted SQL database validation to ensure data integrity.</li>
+                            <li>Executed regression testing before every release cycle.</li>
+                            <li>Reported and tracked defects using Jira; participated in sprint testing and release validation activities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <div class="timeline-badge" style="background: rgba(0, 180, 216, 0.1); border-color: rgba(0, 180, 216, 0.3); color: var(--accent-primary);">Telecom QA</div>
+                        <h3 class="timeline-title">Telecom Service Issue Tracking System</h3>
+                        <h4 class="timeline-company" style="margin-top: 6px; margin-bottom: 16px;">
+                            <span class="timeline-domain">Domain: Telecom</span>
+                        </h4>
+                        <ul class="timeline-details">
+                            <li>Performed Functional, Regression, and API Testing across multiple modules.</li>
+                            <li>Validated ticket creation, assignment, escalation, and closure workflows.</li>
+                            <li>Conducted API validation and backend database verification.</li>
+                            <li>Executed end-to-end testing of telecom service workflows.</li>
+                            <li>Worked closely with developers for defect analysis, retesting, and closure.</li>
+                            <li>Ensured application stability through comprehensive regression testing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <div class="timeline-badge" style="background: rgba(0, 180, 216, 0.1); border-color: rgba(0, 180, 216, 0.3); color: var(--accent-primary);">Healthcare QA</div>
+                        <h3 class="timeline-title" style="margin-bottom: 16px;">Hospital Management System Testing Project</h3>
+                        <ul class="timeline-details">
+                            <li>Tested Hospital Management System modules such as Patient Registration, Appointment Booking, Doctor Management, and Billing.</li>
+                            <li>Created and executed test cases based on business requirements.</li>
+                            <li>Performed Functional, Regression, and Smoke Testing.</li>
+                            <li>Identified and reported defects and verified bug fixes.</li>
+                            <li>Ensured smooth user experience and application quality.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="experience-content">
+                        <div class="timeline-badge" style="background: rgba(0, 180, 216, 0.1); border-color: rgba(0, 180, 216, 0.3); color: var(--accent-primary);">Security QA</div>
+                        <h3 class="timeline-title" style="margin-bottom: 16px;">PROJECT-Authentication by Encrypted Negative Password</h3>
+                        <ul class="timeline-details">
+                            <li>It provides security to the passwords.</li>
+                            <li>How to protect the password from the attackers.</li>
+                            <li>By using hash function making passwords stronger to crack from the attackers.</li>
+                            <li>At last, by using "Authentication by Encrypted Negative Password" we can give more security to the "User and Password" details.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-minimal" id="contact">
+        <div class="container contact-minimal-container">
+            <div class="contact-minimal-left" data-aos="fade-right">
+                <h3 class="contact-minimal-name">Contact me</h3>
+                <p class="contact-minimal-desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+                <div class="social-links-minimal">
+                    <a href="https://github.com/srisaialamuru" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/srisaialamuru" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:srisaialamuru@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/918096444522" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-minimal-right" data-aos="fade-left">
+                <form class="minimal-form" action="https://formsubmit.co/srisaialamuru@gmail.com" method="POST">
+                    <div class="minimal-input-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="minimal-input-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="minimal-input-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Contact from Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="minimal-submit-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Designed &amp; Built by Sri Sai Alamuru</p>
+                <p class="footer-copyright">&copy; 2026 Sri Sai Alamuru. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
