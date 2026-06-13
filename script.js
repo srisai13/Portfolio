@@ -209,11 +209,53 @@ window.addEventListener('load', () => {
 
 // ===== KEYBOARD NAVIGATION =====
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
+    if (e.key === 'Escape' && navLinksList && navLinksList.classList.contains('open')) {
+        hamburger.classList.remove('open');
+        navLinksList.classList.remove('open');
+        navbar.classList.remove('menu-open');
         document.body.style.overflow = '';
     }
 });
+
+// ===== AJAX CONTACT FORM SUBMISSION =====
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+const submitBtn = document.getElementById('submitBtn');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent page redirect
+        
+        const originalBtnText = submitBtn.innerText;
+        submitBtn.innerText = 'SENDING...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(contactForm);
+
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                contactForm.reset();
+                formStatus.style.display = 'block';
+                setTimeout(() => { formStatus.style.display = 'none'; }, 5000);
+            } else {
+                alert('Oops! There was a problem submitting your form');
+            }
+        })
+        .catch(error => {
+            alert('Oops! There was a problem submitting your form');
+        })
+        .finally(() => {
+            submitBtn.innerText = originalBtnText;
+            submitBtn.disabled = false;
+        });
+    });
+}
 
 console.log('%c Sri Sai Alamuru Portfolio ', 'background: linear-gradient(135deg, #00b4d8, #48cae4); color: white; padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: bold;');

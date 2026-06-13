@@ -390,7 +390,7 @@
             </div>
             
             <div class="contact-minimal-right" data-aos="fade-left">
-                <form class="minimal-form" action="https://formsubmit.co/srisaialamuru2001@gmail.com" method="POST">
+                <form class="minimal-form" id="contactForm" action="https://formsubmit.co/srisaialamuru2001@gmail.com" method="POST">
                     <div class="minimal-input-group">
                         <label for="name">NAME</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -406,7 +406,8 @@
                     <input type="hidden" name="_subject" value="New Contact from Portfolio!">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
-                    <button type="submit" class="minimal-submit-btn">SEND MESSAGE</button>
+                    <button type="submit" class="minimal-submit-btn" id="submitBtn">SEND MESSAGE</button>
+                    <div id="formStatus" style="display: none; color: #4CAF50; font-weight: bold; margin-top: 10px; font-size: 0.9rem;">Message sent successfully!</div>
                 </form>
             </div>
         </div>
