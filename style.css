@@ -164,34 +164,23 @@ img { max-width: 100%; height: auto; }
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Logo as Button */
+/* Logo */
 .topnav-logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 12px;
     text-decoration: none;
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 8px 20px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 .topnav-logo:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
-.topnav-logo-text {
-    font-family: var(--font-primary);
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+.topnav-logo-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 /* Nav Links */
