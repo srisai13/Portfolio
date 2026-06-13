@@ -1784,8 +1784,6 @@ img { max-width: 100%; height: auto; }
     color: var(--bg-primary);
 }
 
-}
-
 /* ===== COMPREHENSIVE MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
     .contact-minimal-container {
@@ -1818,6 +1816,13 @@ img { max-width: 100%; height: auto; }
     /* Topnav logo text */
     .topnav-logo-text {
         font-size: 0.88rem;
+    }
+    /* Screen frame */
+    .screen-frame {
+        border-width: 0;
+    }
+    .corner-letter {
+        display: none;
     }
 }
 
